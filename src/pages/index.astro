@@ -51,7 +51,10 @@ const books: Book[] = await getCollection("books");
 									</a>
 
 									<div class="flex flex-col justify-center">
-										<h2 class="text-2xl font-bold leading-tight text-white">
+										<h2
+											transition:name={`title-${slug}`}
+											class="text-2xl font-bold leading-tight text-white"
+										>
 											{title}
 										</h2>
 										<p>{author}</p>
